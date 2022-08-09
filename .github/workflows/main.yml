@@ -1,0 +1,8 @@
+on: push
+jobs:
+  snyk-delta:
+    runs-on: ubuntu-latest
+    container: docker://snyk/snyk:node
+    steps: 
+     - run: node --version
+     - run: npm --version
