@@ -5,4 +5,4 @@ jobs:
     container: docker://snyk/snyk:node
     steps: 
      - run: snyk auth b429c8af-3dfc-4145-a43c-43ed2e1d6e3c
-     - run: snyk test
+     - run: ls -a
