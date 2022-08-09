@@ -3,4 +3,4 @@ jobs:
   snyk-delta:
     runs-on: ubuntu:latest
     steps:
-      - run: snyk test
+      - run: ls
