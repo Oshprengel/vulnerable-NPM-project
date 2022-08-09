@@ -1,6 +1,7 @@
 on: push
 jobs:
   snyk-delta:
-    runs-on:
-      using: "docker"
-      image: "docker://snyk/snyk:node"
+    runs-on: ubuntu:latest
+    container: docker://snyk/snyk:node
+    steps:
+      - run: snyk test
