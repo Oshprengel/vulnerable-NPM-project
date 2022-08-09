@@ -5,4 +5,4 @@ jobs:
     container: docker://snyk/snyk:node
     steps: 
      - run: node --version
-     - run: npm --version
+     - run: ls
